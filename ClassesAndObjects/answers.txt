@@ -1,0 +1,47 @@
+Question 1: The print method from the base class (class A) is being called on object B. 
+In order to fix this problem, the print method in the base class must be a virtual function in order
+to access the print method in the derived class. 
+Output:
+var = 1
+var = 0
+var = 1 varB = 0
+var = -2 varB = 0
+
+Question 2: In this case, a.print() invokes the print method in the base class because even though a is set 
+to b, a is a variable of type A, not a pointer of type A. Hence, a does not point to b so the print method
+of a is invoked. The second print statement, ptr -> print() also invokes the print method in the base class 
+because the ptr variable points to a varible of type A. In question 1, the ptr is assigned to a variable of 
+type B (derieved class), which, along with the fact the print method in class A is virtual, causes the print 
+method in the derieved class (B) to be invoked instead.
+Output:
+var = -2
+var = -2
+
+Question 3: Calling a print method like "b.A::print()" will invoke the print method in class A even though
+the value being passed to the class is of type B. This is possible because B inherits A. 
+ Output:
+ var = -2
+
+ Question 4: Objects of class A and classs B can be passed to this function because class B is derieved from 
+ class A.
+
+ Question 5: If we change class B: public A to class B: A we will get a bunch of errors. These errors 
+ occur because without the public keyword, B privatly inherits all member functions and variables from 
+ A. So this means we cannot access any of the methods or variables outside of the class. 
+ Output:
+ classes.cpp:42:7: error: ‘A’ is an inaccessible base of ‘B’
+   ptr = &b;
+       ^
+classes.cpp:48:5: error: ‘A’ is an inaccessible base of ‘B’
+   a = b; 
+     ^
+classes.cpp:4:9: error: ‘class A A::A’ is inaccessible
+ class A { 
+         ^
+classes.cpp:53:5: error: within this context
+   b.A::print();
+     ^
+classes.cpp:53:8: error: ‘A’ is an inaccessible base of ‘B’
+   b.A::print();
+        ^
+ 

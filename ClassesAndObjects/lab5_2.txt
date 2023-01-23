@@ -1,0 +1,10 @@
+Script started on Mon 21 Nov 2022 09:05:05 PM EST
+[pittner.12@cse-sl3 lab5]$ g++ -o shape main.cpp shape.cpp
+[pittner.12@cse-sl3 lab5]$ shape
+Circle: 10 | Area = 314.159
+Rectangle: 3, 4 | Area = 12
+Trapezoid: 3, 4, 5 | Area = 16
+[pittner.12@cse-sl3 lab5]$ exit
+exit
+
+Script done on Mon 21 Nov 2022 09:05:26 PM EST

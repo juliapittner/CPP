@@ -1,0 +1,17 @@
+Script started on Mon 21 Nov 2022 09:03:47 PM EST
+[pittner.12@cse-sl3 lab5]$ g++ classes.cpp
+[pittner.12@cse-sl3 lab5]$ ./a.out
+var = 1
+var = 0
+Question 1
+var = 1 varB = 0
+var = -2 varB = 0
+Question 2
+var = -2
+var = -2
+Question 3
+var = -2
+[pittner.12@cse-sl3 lab5]$ exit
+exit
+
+Script done on Mon 21 Nov 2022 09:03:58 PM EST
