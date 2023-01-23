@@ -1,0 +1,16 @@
+[pittner.12@cse-sl5 lab6]$ script Lab6.txt
+Script started, file is Lab6.txt
+[pittner.12@cse-sl5 lab6]$ g++ -o lab6 template_test.cpp
+[pittner.12@cse-sl5 lab6]$ lab6
+Lab 6 test
+
+[2,5,1]
+1
+[]
+[This,is]
+[This,is,lab6]
+1
+[]
+[pittner.12@cse-sl5 lab6]$ exit
+exit
+Script done, file is Lab6.txt
